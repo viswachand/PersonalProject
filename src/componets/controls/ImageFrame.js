@@ -93,7 +93,7 @@ export default function AdvancedGridList() {
                           fontWeight: "10px",
                         }}
                       >
-                        Viswa+Maggie : With Love from Vizag
+                      Himansu +Nitish:love from Delhi
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -114,7 +114,7 @@ export default function AdvancedGridList() {
                           fontWeight: "10px",
                         }}
                       >
-                        Viswa+Maggie : With Love from Vizag
+                      Kajal + Gautam: Mere Yaar ki Shaadi Hai
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -135,7 +135,7 @@ export default function AdvancedGridList() {
                           fontWeight: "10px",
                         }}
                       >
-                        Viswa+Maggie : With Love from Vizag
+                        Nikhil + Shrija: Words are all I Have
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -156,7 +156,7 @@ export default function AdvancedGridList() {
                           fontWeight: "10px",
                         }}
                       >
-                        Viswa+Maggie : With Love from Vizag
+                       Vipasha + CJ: Words are all I Have
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -178,7 +178,7 @@ export default function AdvancedGridList() {
                           fontWeight: "10px",
                         }}
                       >
-                        Viswa+Maggie : With Love from Vizag
+                        Naresh+Atulya : With Love from Karela
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -199,7 +199,7 @@ export default function AdvancedGridList() {
                           fontWeight: "10px",
                         }}
                       >
-                        Viswa+Maggie : With Love from Vizag
+                        Mahesh + Namrutha : With Love from Bengaluru
                       </Typography>
                     </CardContent>
                   </CardActionArea>
