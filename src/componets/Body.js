@@ -94,7 +94,7 @@ export default function ElevateAppBar(props) {
   const classes = useStyles();
 
   return (
-    <Container  style={{ marginTop:80}}>
+    <Container  style={{ marginTop:70}}>
       <div>
         <ImageSlider/>
       </div>
