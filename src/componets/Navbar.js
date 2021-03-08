@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     minHeight: "5em",
     color: "black",
+    position: "static",
   },
   toolbarmargin: {
     ...theme.mixins.toolbar,
