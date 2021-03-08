@@ -11,13 +11,10 @@ import { makeStyles } from "@material-ui/core";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { Grid } from "@material-ui/core";
-
-import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
-
 import ListItem from "@material-ui/core/ListItem";
-
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -76,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       background: "transparent",
     },
+    padding:"5px"
   },
   menuicon: {
     fontSize: "40px",
@@ -120,6 +118,12 @@ const useStyles = makeStyles((theme) => ({
     // fontFamily: "Shippori Mincho",
     // fontweight: "180px",
   },
+  icons: {
+    color: "black",
+  },
+  iconsgroup:{
+    marginTop:"6px"
+  }
 }));
 
 export default function ElevateAppBar(props) {
@@ -237,24 +241,34 @@ export default function ElevateAppBar(props) {
                     </Typography>
                   </Button>
                 </div>
-                <IconButton
-                  color="inherit"
-                  disableRipple
-                  className={classes.MenuIconButtons}
-                >
-                  {/* <Link href="https://www.instagram.com/viswachandreddy/" > */}
-                  <InstagramIcon className={classes.menuicon} />
-                  {/* </Link> */}
-                  
-                </IconButton>
-                <IconButton
-                  color="inherit"
-                  disableRipple
-                  className={classes.MenuIconButtons}
-                  
-                >
-                  <FacebookIcon className={classes.menuicon} />
-                </IconButton>
+                <div className={classes.iconsgroup}>
+                  <IconButton
+                    color="inherit"
+                    disableRipple
+                    className={classes.MenuIconButtons}
+                    
+                  >
+                    <a
+                      className={classes.icons}
+                      href="https://www.instagram.com/viswachandreddy/"
+                    >
+                      <InstagramIcon className={classes.menuicon} />
+                    </a>
+                  </IconButton>
+                  <IconButton
+                    color="inherit"
+                    disableRipple
+                    className={classes.MenuIconButtons}
+                    
+                  >
+                    <a
+                      className={classes.icons}
+                      href="https://www.facebook.com/viswachand.reddy/"
+                    >
+                      <FacebookIcon className={classes.menuicon} />
+                    </a>
+                  </IconButton>
+                </div>
               </Grid>
             </Container>
           </Toolbar>
