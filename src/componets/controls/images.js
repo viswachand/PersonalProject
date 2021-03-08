@@ -14,8 +14,9 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const tutorialSteps = [
   {
     imgPath:
-      "https://images.squarespace-cdn.com/content/v1/58590703e4fcb586c80e4914/1486224930190-JVHCUYF68IR9A4TWEVRK/ke17ZwdGBToddI8pDm48kNbLqx_FIYjfhtEsCHEHzad7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UX_hdIVndeO72MD00jTnc1n42Pd5vs4VrV4yXG_EV_fzwRAeN1AbZG4OR41R6pDVyg/SJR_Parita+Deepanshu_DC00594.jpg?format=2500w",
-  },
+      "https://images.squarespace-cdn.com/content/v1/58590703e4fcb586c80e4914/1486224930190-JVHCUYF68IR9A4TWEVRK/ke17ZwdGBToddI8pDm48kNbLqx_FIYjfhtEsCHEHzad7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UX_hdIVndeO72MD00jTnc1n42Pd5vs4VrV4yXG_EV_fzwRAeN1AbZG4OR41R6pDVyg/SJR_Parita+Deepanshu_DC00594.jpg?format=2500w" ,
+         
+    },
   {
     imgPath:
       "https://images.squarespace-cdn.com/content/v1/58590703e4fcb586c80e4914/1486224979334-N2KOESD166NYYRPKXF1F/ke17ZwdGBToddI8pDm48kIAxOFyGQR3Lx89o4DH4kswUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKccVw9oYjzdNAKyl2nw8EiYA_-bZsoRUccscCSfUNpRoZj40r_Ofp3h0Jx3uVLEzNf/JRS_GV_001052.jpg?format=2500w",

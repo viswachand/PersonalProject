@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -13,16 +11,13 @@ import { makeStyles } from "@material-ui/core";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { Grid } from "@material-ui/core";
-import Controls from "../componets/controls/controls";
-import SwipeableTextMobileStepper from "../componets/controls/images";
-import GridList from "@material-ui/core/GridList";
+
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
+
 import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
+
 
 function ElevationScroll(props) {
   const { children, window } = props;

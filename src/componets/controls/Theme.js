@@ -1,8 +1,7 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 import { Shadows } from "@material-ui/core/styles/shadows";
 
-const Blue = "#3f51b5";
-const white = "#fafafa";
+
 const black = "#212121";
 const diff = "#121858";
 

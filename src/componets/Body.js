@@ -88,7 +88,7 @@ const Textone = (
 );
 
 export default function ElevateAppBar(props) {
-  const { color, children, onClick } = props;
+  const { children, onClick } = props;
   const theme = useTheme();
   const mediaquary = useMediaQuery(theme.breakpoints.down("xs"));
   const classes = useStyles();

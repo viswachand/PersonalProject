@@ -1,17 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import Typography from "@material-ui/core/Typography";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import IconButton from "@material-ui/core/IconButton";
+
 import { makeStyles } from "@material-ui/core";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import { Grid } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import { Link } from "react-router-dom";
-
 
 const useStyles = makeStyles((theme) => ({
   line: {
@@ -59,17 +52,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ElevateAppBar(props) {
- 
   const theme = useTheme();
   const NavBar = useMediaQuery(theme.breakpoints.down("xs"));
   const classes = useStyles();
 
   return (
-   
-  <Typography align="center" variant="h1">
-    <br/>
-    
-    
-    Hi</Typography>
+    <Typography align="center" variant="h1">
+      <br />
+      Hi
+    </Typography>
   );
 }
