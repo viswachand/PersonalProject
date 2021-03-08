@@ -207,7 +207,7 @@ export default function ElevateAppBar(props) {
                 opacity: "0.8",
               }}
             >
-              At Stories by Joseph Radhik, we have travelled across the world to
+              At Stories by Viswachand Reddy, we have travelled across the world to
               create
               <br /> beautiful, moving images of love. Find out about our shoot
               experience here.
