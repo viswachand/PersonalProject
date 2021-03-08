@@ -91,10 +91,11 @@ export default function ElevateAppBar(props) {
 
   return (
     <div>
-      <hr style={{ marginTop: 100 , opacity:0.3 }}/>
+      <hr style={{ marginTop: 100, opacity: 0.3 }} />
       <div>
         <Typography align="center">
-          <Button disableRipple className={classes.Bookus}>
+          <Button disableRipple className={classes.Bookus} component={Link}
+              to="/Bookus">
             <Typography variant="h6" className={classes.Bookus}>
               Book us now
             </Typography>
@@ -141,7 +142,8 @@ export default function ElevateAppBar(props) {
             <Button
               disableRipple
               className={classes.footerbutton}
-              
+              component={Link}
+              to="/Bookus"
             >
               <Typography variant="h8" className={classes.footerbuttontext}>
                 Book us now

@@ -14,8 +14,8 @@ import Header from "./componets/Navbar";
 import Footer from "./componets/Footer";
 import Body from "./componets/Body";
 
-import Vc from './componets/BlogPages/Vc+maggie'
-import Blog from './componets/controls/Demo'
+import Vc from "./componets/BlogPages/Vc+maggie";
+import Blog from "./componets/controls/Demo";
 
 const useStyles = makeStyles({
   appMain: {
@@ -29,20 +29,17 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.appMain}>
-        
         <BrowserRouter>
-        <Header />
+          <Header />
           <Switch>
             <Route exact path="/Bookus" component={Bookus} />
-            <Route exact path="/" component={Body} />            
-            <Route exact path="/Blog" component = {Blog}/>
-            <Route exact path="/vc" component = {Vc}/> 
+            <Route exact path="/" component={Body} />
+            <Route exact path="/Blog" component={Blog} />
+            <Route exact path="/vc" component={Vc} />
           </Switch>
-          
+
           <Footer />
         </BrowserRouter>
-        
-       
       </div>
     </ThemeProvider>
   );

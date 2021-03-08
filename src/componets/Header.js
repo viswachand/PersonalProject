@@ -62,10 +62,10 @@ export default function ElevateAppBar(props) {
       <Container>
         <div>
           <NavBar />
+        </div>  
+        <div>
+          
         </div>
-        <br />
-        <hr></hr>
-
         <SwipeableTextMobileStepper />
         <Body />
         <br></br>

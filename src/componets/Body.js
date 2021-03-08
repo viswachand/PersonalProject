@@ -1,11 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import { Grid } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -14,17 +9,20 @@ import PhotoShowCase from "./controls/PhotoShowCase";
 import Img from "../Assests/img.jpg";
 import Love from "../Assests/love.jpg";
 import { Link } from "react-router-dom";
-import Blog from "../Assests/blog.jpg";
 import Container from "@material-ui/core/Container";
 import ImageSlider from './controls/images';
 import Imageframe from './controls/ImageFrame';
 
 const useStyles = makeStyles((theme) => ({
   Selftextone: {
-    margin: "60px 0px 21.8px",
+    margin: "50px 0px 21.8px",
+    [theme.breakpoints.down("sm")]: {
+      margin: "15px 0px 50px",
+    },
   },
   Selftexttwo: {
     margin: "18px 0px 50px",
+    
   },
   Shoots: {
     "&:hover": {
@@ -96,7 +94,7 @@ export default function ElevateAppBar(props) {
   const classes = useStyles();
 
   return (
-    <Container  style={{ marginTop:15}}>
+    <Container  style={{ marginTop:80}}>
       <div>
         <ImageSlider/>
       </div>
