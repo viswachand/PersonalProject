@@ -1,35 +1,21 @@
 import React from "react";
-import PropTypes from "prop-types";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import { makeStyles, RadioGroup } from "@material-ui/core";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import { Grid } from "@material-ui/core";
-import Controls from "../componets/controls/controls";
-import SwipeableTextMobileStepper from "../componets/controls/images";
-import GridList from "@material-ui/core/GridList";
+import { makeStyles} from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
-import Radio from "./controls/RadioGroup";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import ListSubheader from "@material-ui/core/ListSubheader";
 import FormControl from "@material-ui/core/FormControl";
 import { FormHelperText } from "@material-ui/core";
 import Select from "@material-ui/core/Select";
-import Date from "./controls/DatePicker";
 import Button from "@material-ui/core/Button";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import createTypography from "@material-ui/core/styles/createTypography";
 const useStyles = makeStyles((theme) => ({
   toolbarmargin: {
     ...theme.mixins.toolbar,
@@ -44,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
       width: 500,
+      [theme.breakpoints.down("sm")]: {
+        width: "300px",
+      },
     },
   },
   root1: {
@@ -65,6 +54,15 @@ const useStyles = makeStyles((theme) => ({
 export default function ElevateAppBar() {
   // const { color, children, onClick } = props1;
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const initialValues = {
     name: "",
@@ -224,7 +222,7 @@ export default function ElevateAppBar() {
                     name="countryCode"
                     id="filled-error-helper-text"
                     helperText={<ErrorMessage name="countryCode" />}
-                    label="Country and area code of your phone number *"
+                    label="Country and area code  *"
                     InputProps={{ classes: { root: classes.inputRoot } }}
                     InputLabelProps={{
                       classes: {
@@ -239,7 +237,7 @@ export default function ElevateAppBar() {
                     name="details"
                     id="filled-error-helper-text"
                     helperText={<ErrorMessage name="details" />}
-                    label="How did you hear of us?Have you seen our work at wedding?"
+                    label="How did you hear of us?"
                     InputProps={{ classes: { root: classes.inputRoot } }}
                     InputLabelProps={{
                       classes: {
@@ -341,12 +339,24 @@ export default function ElevateAppBar() {
                   variant="contained"
                   color="primary"
                   disabled={props.isSubmitting}
+                  onClick={handleClickOpen}
                 >
                   {props.isSubmitting ? "Loading" : "Finished"}
                 </Button>
               </Form>
             )}
           </Formik>
+          <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{" Thank You :)"}</DialogTitle>
+      
+       
+      </Dialog>
+
           {/* <Typography style={{ marginTop: 20 }}>
             How did you hear of us? Have you seen our work at a friend's wedding?
           </Typography>
