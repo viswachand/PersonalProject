@@ -220,7 +220,7 @@ export default function AdvancedGridList() {
             to="/Blog"
           >
             <Typography align="center">
-              visit th blog for more photos
+              visit the blog for more photos
             </Typography>
           </Button>
         </Grid>

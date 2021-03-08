@@ -148,7 +148,7 @@ export default function ElevateAppBar(props) {
               to="/Bookus"
             >
               <Typography align="center">
-                Be the star in your story, Books us now
+                Be the star in your story, Book us now
               </Typography>
             </Button>
           </Grid>
@@ -168,7 +168,7 @@ export default function ElevateAppBar(props) {
 
             <Typography align="center">
               <i className={classes.italictext}>
-                celebrate you love with us this season
+                celebrate your love with us this season
               </i>
             </Typography>
           </Grid>

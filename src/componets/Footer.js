@@ -123,7 +123,7 @@ export default function ElevateAppBar(props) {
       <div>
         <Typography align="center">
           <Typography variant="h6" className={classes.footertext}>
-            Made with love, in india
+            Made with love, In india
           </Typography>
         </Typography>
       </div>
