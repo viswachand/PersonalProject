@@ -80,6 +80,10 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       color: "black",
     },
+
+  },
+  icons: {
+    color: "black",
   },
 }));
 
@@ -94,8 +98,12 @@ export default function ElevateAppBar(props) {
       <hr style={{ marginTop: 100, opacity: 0.3 }} />
       <div>
         <Typography align="center">
-          <Button disableRipple className={classes.Bookus} component={Link}
-              to="/Bookus">
+          <Button
+            disableRipple
+            className={classes.Bookus}
+            component={Link}
+            to="/Bookus"
+          >
             <Typography variant="h6" className={classes.Bookus}>
               Book us now
             </Typography>
@@ -112,10 +120,20 @@ export default function ElevateAppBar(props) {
         >
           <Grid item alignItems="center">
             <IconButton color="inherit" className={classes.footericon}>
-              <FacebookIcon />
+              <a
+                className={classes.icons}
+                href="https://www.instagram.com/viswachandreddy/"
+              >
+                <InstagramIcon />
+              </a>
             </IconButton>
             <IconButton color="inherit" className={classes.footericon}>
-              <InstagramIcon />
+              <a
+                className={classes.icons}
+                href="https://www.facebook.com/viswachand.reddy/"
+              >
+                <FacebookIcon />
+              </a>
             </IconButton>
           </Grid>
         </Grid>

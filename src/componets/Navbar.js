@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       background: "transparent",
     },
-    padding:"1px"
+    
   },
   menuicon: {
     fontSize: "40px",
